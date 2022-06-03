@@ -1,0 +1,51 @@
+NOTES MOOC FULLSTACK DEVELOPMENT
+
+--------------------------
+PART 0
+--------------------------
+
+-1st rule of web development: 
+	"Always keep Developer Console (f12) open!
+	
+-Server and browser communicate via HTTP protocol; the network tab of the developer console shows how the browser and the server communicate
+	-The general flow is that the browser HTTP GET requests a webapp
+	-The HTML code is returned; 
+	-When it contains images the browser sends a second HTTP GET request for the image
+	-The server replies with the image
+	
+==== HTML BASICS REVIEW ====
+-Used to structure a webpage and its contents
+-Consists of elements
+	- paragraph <p></p>
+	- images <img src='' alt=''>
+	- head <head></head> Container for everything you want to include that is not showable content
+	- body and title <body></body> <title> </title>
+	- headings <h1>-<h6>
+	- lists:
+		-unordered list <ul> <li>list element 1</li> </ul>
+		-ordered list <ol> <li>list element 1</li> </ol>
+	- links <a> (a= short for anchor) i.e. <a href=""> </a>
+
+- Making forms:
+	-Forms allow user to enter data
+	- <input>
+	- <form> defines the form container, allowing to determine behaviour using action and method attributes
+	- <label for=""> allows you to connect a label to an input
+	- <button> allows you to program custom button with javascript behaviour
+	- <input type="submit"> gives a preproduced element
+	
+
+==== CSS BASICS REVIEW ====
+
+- Style sheet language (!markup !programming languages)
+- Use a selector, and in the decleration use the "property: property value;" way to set properties.
+	- Decleration is wrapped in {}
+- You can style multiple selectors at the same time by seperating the with , -> h1, h2 { properties }
+- There are different types of selectors:
+	- normal tags (p)
+	- ID selectors (#my-id)
+	- Class selectors (.my-class)
+	- Attribute selectors (img[src] only selects <img src> and not <img>
+	- Pseudo-class selector (a:hover) only selects element in specified state
+- Style sheet is added to HTML in the head using <link href="" rel="stylesheet">
+- Based on box model
